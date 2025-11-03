@@ -37,5 +37,5 @@ jobs:
         run: docker push ${{ secrets.AZURE_ACR_LOGIN_SERVER }}/my-app:${{ github.ref_name }}
 
       - name: Deploy to server
-        run: echo "Deploying to server..."
+        run: echo "Deploying to server....."
 
