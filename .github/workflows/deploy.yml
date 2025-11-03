@@ -29,6 +29,7 @@ jobs:
           username: ${{ secrets.AZURE_ACR_USERNAME }}
           password: ${{ secrets.AZURE_ACR_PASSWORD }}
 
+
       - name: Build Docker image
         run: docker build -t ${{ secrets.AZURE_ACR_LOGIN_SERVER }}/my-app:${{ github.ref_name }} .
 
